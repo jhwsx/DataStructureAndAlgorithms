@@ -135,6 +135,22 @@ public class MyLinkedList {
     }
 
     /**
+     * 获取链表的长度
+     * @return
+     */
+    public int getSize() {
+        return size;
+    }
+
+    /**
+     * 判断链表是否为空
+     * @return
+     */
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    /**
      * 输出
      */
     public void output() {

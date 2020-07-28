@@ -25,7 +25,7 @@ public class MyArray {
 
     /**
      * 向数组中插入元素
-     *
+     * <p>
      * 尾部插入
      * 头部插入
      * 中间插入
@@ -51,7 +51,7 @@ public class MyArray {
 
     /**
      * 删除元素
-     *
+     * <p>
      * 尾部删除
      * 头部删除
      * 中间删除
@@ -74,7 +74,7 @@ public class MyArray {
      * 更新元素
      *
      * @param element 新的元素值
-     * @param index 更新的位置
+     * @param index   更新的位置
      * @throws Exception
      */
     public void set(int element, int index) throws Exception {
@@ -96,6 +96,24 @@ public class MyArray {
             throw new IndexOutOfBoundsException("更新元素的位置超出数组中实际元素索引范围[0, " + (size - 1) + "], index: " + index);
         }
         return array[index];
+    }
+
+    /**
+     * 判断数组是否为空
+     *
+     * @return
+     */
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
+    /**
+     * 获取数组中实际的元素个数
+     *
+     * @return
+     */
+    public int getSize() {
+        return size;
     }
 
     private void ensureCapacity() {
