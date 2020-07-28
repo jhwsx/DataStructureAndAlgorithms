@@ -26,6 +26,10 @@ public class MyArray {
     /**
      * 向数组中插入元素
      *
+     * 尾部插入
+     * 头部插入
+     * 中间插入
+     *
      * @param element 插入的元素
      * @param index   插入的位置
      * @throws Exception
@@ -47,6 +51,10 @@ public class MyArray {
 
     /**
      * 删除元素
+     *
+     * 尾部删除
+     * 头部删除
+     * 中间删除
      *
      * @param index 删除的位置
      * @return 删除的位置上元素的值
