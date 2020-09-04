@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class ReversePolishNotion {
     private static final String OPERATOR_ADD = "+";
-    private static final String OPERATOR_SUBSTRACT = "-";
+    private static final String OPERATOR_SUBTRACT = "-";
     private static final String OPERATOR_MULTIPLY = "*";
     private static final String OPERATOR_DIVIDE = "/";
     private static final String LEFT_BRACKET = "(";
@@ -23,7 +23,7 @@ public class ReversePolishNotion {
 
     static {
         PRIORITY_DICT.put(OPERATOR_ADD, 0);
-        PRIORITY_DICT.put(OPERATOR_SUBSTRACT, 0);
+        PRIORITY_DICT.put(OPERATOR_SUBTRACT, 0);
         PRIORITY_DICT.put(OPERATOR_MULTIPLY, 1);
         PRIORITY_DICT.put(OPERATOR_DIVIDE, 1);
     }
